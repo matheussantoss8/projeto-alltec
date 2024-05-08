@@ -4,7 +4,7 @@ import { Footer } from "./components/footer";
 /* import { Galeria } from "./components/galeria"; */
 import { Header } from "./components/header";
 import { Mapa } from "./components/mapa";
-import Clientes from "./sections/clientes";
+/* import Clientes from "./sections/clientes"; */
 
 import Hero from "./sections/hero";
 import Parceiros from "./sections/parceiros";
