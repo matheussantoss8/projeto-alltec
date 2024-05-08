@@ -46,8 +46,14 @@ export const Header = () => {
         {/*    <h1 className="poppins-semibold text-2xl text-white
         ">ALL Tech</h1> */}
         <div className="wrapper">
-          <svg>
-            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+          <svg className="w-[150px] h-[50px] ">
+            <text
+              x="50%"
+              y="50%"
+              dy=".35em"
+              text-anchor="middle"
+              className="text-4xl"
+            >
               ALLTEC
             </text>
           </svg>
