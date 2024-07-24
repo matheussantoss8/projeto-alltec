@@ -1,5 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Produtos } from "./listProdutos";
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -20,33 +22,6 @@ const responsive = {
   },
 };
 
-const Data = [
-  {
-    icon: "💻",
-    service: "Suporte em T.I",
-    description:
-      "Mantenha seus sistemas operando de forma eficiente e segura com nossa equipe especializada em Tecnologia da Informação. Oferecemos suporte abrangente para resolver problemas técnicos, configurar redes, proteger dados e garantir que sua infraestrutura de TI funcione sem interrupções, permitindo que você se concentre em seus objetivos comerciais.",
-  },
-  {
-    icon: "🔒",
-    service: " Instalações de sistema de segurança",
-    description:
-      "Proteja o seu espaço com as mais avançadas tecnologias de segurança. Oferecemos instalações de sistemas de segurança sob medida para suas necessidades, garantindo tranquilidade e proteção para sua residência ou negócio.",
-  },
-  {
-    icon: "☀️",
-    service: " Soluções em energia solar",
-    description:
-      "Faça a transição para uma fonte de energia limpa e sustentável com nossas soluções em energia solar. Desde a avaliação do local até a instalação dos painéis, oferecemos um serviço completo para ajudá-lo a economizar energia e reduzir sua pegada de carbono.",
-  },
-  {
-    icon: "🛍️ ",
-    service: " Vendas de diversos produtos",
-    description:
-      "Explore nossa ampla gama de produtos cuidadosamente selecionados para atender às suas necessidades. De eletrônicos a produtos domésticos, oferecemos qualidade e variedade para garantir sua satisfação em cada compra. ",
-  },
-];
-
 export default function Corporativos() {
   return (
     <>
@@ -63,14 +38,18 @@ export default function Corporativos() {
         expectativas, concretizando suas metas.
       </p>
       <Carousel showDots={false} infinite responsive={responsive}>
-        {Data.map((item, index) => {
+        {Produtos.map((item, index) => {
           return (
             <div
               key={index}
               className="h-[450px] border-2 flex flex-col gap-3 first:ms-0 first-letter:me-0 mx-4 border-[#3f415c] p-5 rounded-md"
             >
-              <div className="text-5xl border-[#3f415c] border-2 rounded-md flex items-center justify-center w-[80px] h-[80px]">
-                {item.icon}
+              <div className="w-full h-[250px] mb-3">
+                <img
+                  src={item.image}
+                  alt={item.service}
+                  className="w-full h-full object-cover rounded-md"
+                />
               </div>
               <h1 className="text-2xl text-white">{item.service}</h1>
               <p className="text-base text-[#8CA4BC]">{item.description}</p>

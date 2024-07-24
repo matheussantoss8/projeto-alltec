@@ -14,6 +14,9 @@ const menuItems = [
 
 export const Header = () => {
   const [isMenuMobileOpen, setMenuMobileOpen] = useState(false);
+  const phoneNumber = "5511917425678";
+  const defaultMessage = "Olá, vim do site de vocês.";
+  const message = encodeURIComponent(defaultMessage);
 
   const toggleMenuMobile = () => {
     setMenuMobileOpen((prevState) => !prevState);
@@ -67,10 +70,7 @@ export const Header = () => {
       </div>
 
       <a
-        href={`https://api.whatsapp.com/send?phone=55119174256788&text=${encodeURIComponent(
-          "Olá, vim do site de vocês."
-        )}`}
-        target="_blank"
+        href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`}
         className="destaque"
       >
         Entre em contato
@@ -88,10 +88,7 @@ export const Header = () => {
 
       <div className={`menuMobile ${isMenuMobileOpen ? "mostrar" : ""}`}>
         <a
-          href={`https://api.whatsapp.com/send?phone=55119174256788&text=${encodeURIComponent(
-            "Olá, vim do site de vocês."
-          )}`}
-          target="_blank"
+          href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`}
           className="destacado"
         >
           Entre em contato
