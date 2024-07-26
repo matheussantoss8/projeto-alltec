@@ -12,15 +12,7 @@ export default function QuemSomos() {
       <div className="md:w-[50%] flex flex-col gap-5 mb-10 md:mb-0">
         <h1 className="text-3xl md:text-5xl text-white">Quem Somos</h1>
         <p className=" text-base md:text-xl md:leading-9 text-[#8CA4BC]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus
-          suscipit quia exercitationem eum vero eligendi explicabo perspiciatis
-          vitae ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Iusto natus suscipit quia exercitationem eum vero eligendi explicabo
-          perspiciatis vitae ipsum. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Iusto natus suscipit quia exercitationem eum vero
-          eligendi explicabo perspiciatis vitae ipsum. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Iusto natus suscipit quia
-          exercitationem eum vero eligendi explicabo perspiciatis vitae ipsum.
+        É com grande satisfação que apresentamos a Alltec - Inovação em Tecnologia. Somos uma empresa especializada em soluções de tecnologia para empresas de todos os tamanhos e segmentos. Atuamos no mercado há mais de 10 anos, oferecendo soluções tecnológicas inovadoras e eficientes para nossos clientes. Nosso objetivo principal é a excelência no atendimento e a satisfação de nossos clientes.
         </p>
         <Botao />
       </div>

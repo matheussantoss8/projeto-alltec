@@ -4,7 +4,6 @@ import { Produtos } from "./listProdutos";
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -32,10 +31,11 @@ export default function Corporativos() {
         Nossos Produtos
       </h1>
       <p className="text-left text-base md:!text-center md:mx-auto md:w-[50%] text-[#8CA4BC]">
-        Oferecemos soluções completas de segurança digital e energia
-        sustentável, visando simplificar sua vida e otimizar eficiência. Com
-        equipe experiente, garantimos inovação confiável que excede
-        expectativas, concretizando suas metas.
+        Bem-vindo à nossa loja, onde você encontrará uma seleção cuidadosamente
+        escolhida de produtos para elevar sua experiência tecnológica e garantir
+        a segurança do seu ambiente. Navegue pelo nosso catálogo e encontre
+        itens que atendem a todas as suas necessidades, desde periféricos
+        essenciais até sistemas avançados de segurança.
       </p>
       <Carousel showDots={false} infinite responsive={responsive}>
         {Produtos.map((item, index) => {

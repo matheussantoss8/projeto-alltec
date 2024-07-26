@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import iconImage from "../../assets/images/fontes/tecnologia-de-lampada-vetor.jpg"
 
 const menuItems = [
   {
@@ -9,7 +10,7 @@ const menuItems = [
   { name: "Nossos Serviços", link: "#services", target: false },
   { name: "Produtos", link: "#products", target: false },
   { name: "Localização", link: "#maps", target: false },
-  { name: "FAQ", link: "#faq", target: false },
+  // { name: "FAQ", link: "#faq", target: false },
 ];
 
 export const Header = () => {
@@ -20,6 +21,12 @@ export const Header = () => {
 
   const toggleMenuMobile = () => {
     setMenuMobileOpen((prevState) => !prevState);
+  };
+
+  const handleMenuItemClick = () => {
+    if (isMenuMobileOpen) {
+      setMenuMobileOpen(false);
+    }
   };
 
   useEffect(() => {
@@ -46,8 +53,6 @@ export const Header = () => {
   return (
     <nav className="md:px-52 transition-colors duration-500" id="navbar">
       <div className="opcoes ">
-        {/*    <h1 className="poppins-semibold text-2xl text-white
-        ">ALL Tech</h1> */}
         <div className="wrapper">
           <svg className="w-[150px] h-[50px] ">
             <text
@@ -63,7 +68,12 @@ export const Header = () => {
         </div>
 
         {menuItems.map((item, index) => (
-          <a key={index} href={item.link} target={item.target ? "_blank" : ""}>
+          <a
+            key={index}
+            href={item.link}
+            target={item.target ? "_blank" : ""}
+            onClick={handleMenuItemClick}
+          >
             {item.name}
           </a>
         ))}
@@ -90,12 +100,16 @@ export const Header = () => {
         <a
           href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`}
           className="destacado"
+          onClick={handleMenuItemClick}
         >
           Entre em contato
         </a>
         {menuItems.map((item, index) => (
-          <a key={index} href={item.link}>
-            <div className="icone" style={{ backgroundImage: "url('')" }}></div>
+          <a key={index} href={item.link} onClick={handleMenuItemClick}>
+            <div
+              className="icone"
+              style={{ backgroundImage: `url(${iconImage})` }}
+            ></div>
             <div className="texto">
               <h3>{item.name}</h3>
             </div>

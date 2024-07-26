@@ -63,49 +63,49 @@ export const Produtos = [
     image:
       "https://cdn.awsli.com.br/600x700/2595/2595093/produto/233320543/standard_resolution-rs7mhykmy0.jpg",
     service:
-      "Mouse Gamer Dragon Ball Super Saiyajin Blue Ag325 Usb Cor Azul",
+      "Mouse Gamer Dragon Ball Super Saiyajin Blue Ag325 Usb",
     description: "AKKO",
   },
   {
     image:
       "https://cdn.awsli.com.br/600x700/2595/2595093/produto/234350333/1-83982-293ovh59hg.png",
-    service: "Mouse Gamer Ag325 One Piece Roronoa Zoro 12400 Dpi Usb - AKKO",
-    description: "lorem",
+    service: "Mouse Gamer Ag325 One Piece Roronoa Zoro 12400 Dpi Usb",
+    description: "AKKO",
   },
   {
     image:
       "https://www.gigantec.com.br/media/catalog/product/cache/526816d9200b6f442572bf66781ece42/h/e/headset-gamer-redragon-cronus-branco-rgb-h211w-rgb-001.jpg",
     service:
-      "Headset Gamer Cronus H211w-rgb H211w-rgb Branco Com Luz Rgb Led - Redragon",
-    description: "lorem",
+      "Headset Gamer Cronus H211w-rgb H211w-rgb Luz Rgb Led",
+    description: "Redragon",
   },
   {
     image: "https://www.pauta.com.br/images/thumbs/0063371_600.png",
     service:
-      "Headset Gamer Cronus Iluminação Rgb C/ Microfone Redragon Cor Preto - Redragon",
-    description: "lorem",
+      "Headset Gamer Cronus Iluminação Rgb C/ Microfone Redragon",
+    description: "Redragon",
   },
   {
     image: "https://m.media-amazon.com/images/I/51bB8XSYwDS.jpg",
-    service: "Camera Intelbras VHD 1220 Full color Bullet",
-    description: "lorem",
+    service: "Camera VHD 1220 Full color Bullet",
+    description: "Intelbras",
   },
   {
     image:
       "https://plantec.com/arquivos/produtos/imagens_adicionais/original/FOTO_bb118ff5643d37e4ecb0a1286e95192f.jpg",
-    service: "Stand Alone MHDX 3116 Intelbras",
-    description: "lorem",
+    service: "Stand Alone MHDX 3116",
+    description: "Intelbras",
   },
   {
     image:
       "https://backend.intelbras.com/sites/default/files/2019-01/amt_4010_smart.jpg",
     service: "Central de Alarme AMT 4010",
-    description: "lorem",
+    description: "Intelbras",
   },
   {
     image:
       "https://images.tcdn.com.br/img/img_prod/332274/central_de_choque_e_cerca_eletrica_intelbras_elc_5001_eletrifica_ate_400m_de_cerca_tensao_de_12_000v_5086_1_20220214193931.jpg",
     service: "Central de choque ELC 5001",
-    description: "lorem",
+    description: "Intelbras",
   },
 ];
