@@ -1,5 +1,4 @@
-const phoneNumber = "5511917425678";
-const message = "Olá! Estou interessado(a) em saber mais sobre seus serviços e como vocês podem me ajudar. Poderiam, por favor, fornecer mais informações? Agradeço desde já!";
+import { message, phoneNumber } from "../ButtonWhats";
 
 export default function Botao() {
   return (

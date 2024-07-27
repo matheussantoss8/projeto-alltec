@@ -31,7 +31,6 @@ function App() {
       <main className="px-5 container mx-auto flex flex-col gap-10">
         <Hero />
 
-        <Parceiros />
         <hr className=" animate-pulse" />
         <QuemSomos />
         <hr className=" animate-pulse" />
@@ -42,6 +41,9 @@ function App() {
         {/*         <hr className=" animate-pulse" />
         <Clientes></Clientes> */}
         {/*       <Galeria /> */}
+        <hr className="mb-20 animate-pulse" />
+
+        <Parceiros />
         <hr className="mb-20 animate-pulse" />
       </main>
       <ButtonUp />

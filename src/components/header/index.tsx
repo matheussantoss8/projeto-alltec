@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import iconImage from "../../assets/images/fontes/tecnologia-de-lampada-vetor.jpg"
+import iconImage from "../../assets/images/fontes/tecnologia-de-lampada-vetor.jpg";
+import { message, phoneNumber } from "../ButtonWhats";
 
 const menuItems = [
   {
@@ -15,9 +16,6 @@ const menuItems = [
 
 export const Header = () => {
   const [isMenuMobileOpen, setMenuMobileOpen] = useState(false);
-  const phoneNumber = "5511917425678";
-  const defaultMessage = "Olá, vim do site de vocês.";
-  const message = encodeURIComponent(defaultMessage);
 
   const toggleMenuMobile = () => {
     setMenuMobileOpen((prevState) => !prevState);
