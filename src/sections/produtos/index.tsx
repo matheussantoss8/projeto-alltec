@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Produtos } from "./listProdutos";
-import { message, phoneNumber } from "../../components/ButtonWhats";
+import { phoneNumber } from "../../components/ButtonWhats";
 
 const responsive = {
   superLargeDesktop: {
