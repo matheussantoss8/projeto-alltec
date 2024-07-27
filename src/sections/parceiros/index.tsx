@@ -7,7 +7,7 @@ import spoluImage from "../../assets/images/logo/spolu.png";
 const parceiros = [
   { src: solidImage, alt: "Solid", name: "Solid" },
   { src: aloformImage, alt: "Aloform", name: "Aloform" },
-  { src: c3techImage, alt: "C3 TECH", name: "C3 TECH" },
+  { src: c3techImage, alt: "C3 TECH", name: "C3 Tech" },
   { src: intelbrasImage, alt: "Intelbras", name: "Intelbras" },
   { src: spoluImage, alt: "spolu", name: "spolu" },
 ];
@@ -20,19 +20,21 @@ export default function Parceiros() {
           Empresas Parceiras
         </h2>
       </div>
-      <div className="grid max-w-[100%] gap-40 overflow-x-auto md:w-full md:gap-0 mt-10 md:overflow-hidden grid-cols-5 w-full">
-        {parceiros.map((parceiro, index) => (
-          <div key={index} className="text-center">
-            <img
-              src={parceiro.src}
-              alt={parceiro.alt}
-              className="w-16 h-16 rounded-full mx-auto mb-2"
-            />
-            <h1 className="text-base md:text-2xl text-[#8CA4BC]">
-              {parceiro.name}
-            </h1>
-          </div>
-        ))}
+      <div className="w-full overflow-x-auto">
+        <div className="flex flex-wrap justify-center gap-10 md:gap-20">
+          {parceiros.map((parceiro, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <img
+                src={parceiro.src}
+                alt={parceiro.alt}
+                className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover"
+              />
+              <h1 className="text-sm md:text-base text-[#8CA4BC] mt-2">
+                {parceiro.name}
+              </h1>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
