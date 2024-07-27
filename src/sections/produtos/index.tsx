@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Produtos } from "./listProdutos";
-import { phoneNumber } from "../../components/ButtonWhats";
+import { message, phoneNumber } from "../../components/ButtonWhats";
 
 const responsive = {
   superLargeDesktop: {
@@ -45,7 +45,7 @@ export default function Corporativos() {
           return (
             <div
               key={index}
-              className="h-[450px] border-2 flex flex-col gap-3 first:ms-0 first-letter:me-0 mx-4 border-[#3f415c] p-5 rounded-md"
+              className="h-[470px] border-2 flex flex-col gap-3 first:ms-0 first-letter:me-0 mx-4 border-[#3f415c] p-5 rounded-md"
             >
               <div className="w-full h-[250px] mb-3">
                 <a
@@ -62,6 +62,14 @@ export default function Corporativos() {
               </div>
               <h1 className="text-2xl text-white">{item.service}</h1>
               <p className="text-base text-[#8CA4BC]">{item.description}</p>
+              <a
+                href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+                  messageProduct
+                )}`}
+                className="mt-auto block px-6 py-2 text-[#fff] rounded-full text-center transition-colors duration-300 hover:bg-[#fff] hover:text-black"
+              >
+                Saiba mais sobre...
+              </a>
             </div>
           );
         })}
