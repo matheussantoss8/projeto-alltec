@@ -40,12 +40,12 @@ export default function Corporativos() {
       </p>
       <Carousel showDots={false} infinite responsive={responsive}>
         {Produtos.map((item, index) => {
-          const messageProduct = `Olá! Estou interessado(a) em saber mais sobre o produto ${item.service} . Poderiam, por favor, fornecer mais detalhes sobre as especificações, funcionalidades e preços? Também gostaria de saber se há alguma promoção ou oferta especial disponível no momento. Agradeço desde já!`;
+          const messageProduct = `Olá! Estou interessado(a) em saber mais sobre o produto ${item.service}. Poderiam, por favor, fornecer mais detalhes sobre as especificações, funcionalidades e preços? Também gostaria de saber se há alguma promoção ou oferta especial disponível no momento. Agradeço desde já!`;
 
           return (
             <div
               key={index}
-              className="h-[470px] border-2 flex flex-col gap-3 first:ms-0 first-letter:me-0 mx-4 border-[#3f415c] p-5 rounded-md"
+              className="h-[500px] border-2 flex flex-col gap-3 first:ms-0 first-letter:me-0 mx-4 border-[#3f415c] p-5 rounded-md"
             >
               <div className="w-full h-[250px] mb-3">
                 <a
@@ -66,9 +66,9 @@ export default function Corporativos() {
                 href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
                   messageProduct
                 )}`}
-                className="mt-auto block px-6 py-2 text-[#fff] rounded-full text-center transition-colors duration-300 hover:bg-[#fff] hover:text-black"
+                className="mt-auto block px-6 py-2 text-[#fff] rounded-full text-center transition-colors duration-300 border border-white hover:bg-[#fff] hover:text-black"
               >
-                Saiba mais sobre...
+                Mais Sobre {item.name}
               </a>
             </div>
           );

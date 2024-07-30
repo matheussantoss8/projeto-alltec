@@ -19,6 +19,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@types/react-slick": "^0.23.13",
@@ -29,7 +30,9 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "eslint-plugin-storybook": "^0.8.0",
     "postcss": "^8.4.38",
+    "storybook": "^8.2.6",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
