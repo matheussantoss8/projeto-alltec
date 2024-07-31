@@ -7,7 +7,7 @@ import { Mapa } from "./components/mapa";
 /* import Clientes from "./sections/clientes"; */
 
 import Hero from "./sections/hero";
-import Parceiros from "./sections/parceiros";
+// import Parceiros from "./sections/parceiros";
 import Produtos from "./sections/produtos";
 import QuemSomos from "./sections/quem-somos";
 import Servicos from "./sections/servicos";
