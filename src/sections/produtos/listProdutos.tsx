@@ -1,23 +1,9 @@
 export const Produtos = [
   {
-    name: "Bobina",
-    image:
-      "https://cdn.awsli.com.br/2547/2547358/produto/207712682/57139a6fac0e4954413017cc3d254af2-eomhxc.jpg",
-    service: "Bobina para impressão térmica 80x40 branca",
-    description: "Aloform",
-  },
-  {
     name: "Headset",
     image:
       "https://http2.mlstatic.com/D_NQ_NP_808637-MLU77384867167_072024-O.webp",
     service: "Headset Gamer Redragon Diomedes H388",
-    description: "Redragon",
-  },
-  {
-    name: "Headset",
-    image:
-      "https://http2.mlstatic.com/D_NQ_NP_780780-MLU77117868044_062024-O.webp",
-    service: "Headset Gamer Redragon Hylas Brancoala B260rgb",
     description: "Redragon",
   },
   {

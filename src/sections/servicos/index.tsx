@@ -9,21 +9,27 @@ const Data = [
   },
   {
     icon: "🔒",
-    service: " Instalações de sistema de segurança",
+    service: "Instalações de sistema de segurança",
     description:
       "Proteja o seu espaço com as mais avançadas tecnologias de segurança. Oferecemos instalações de sistemas de segurança sob medida para suas necessidades, garantindo tranquilidade e proteção para sua residência ou negócio.",
   },
   {
     icon: "☀️",
-    service: " Soluções em energia solar",
+    service: "Soluções em energia solar",
     description:
       "Faça a transição para uma fonte de energia limpa e sustentável com nossas soluções em energia solar. Desde a avaliação do local até a instalação dos painéis, oferecemos um serviço completo para ajudá-lo a economizar energia e reduzir sua pegada de carbono.",
   },
   {
-    icon: "🛍️ ",
-    service: " Vendas de diversos produtos",
+    icon: "🛍️",
+    service: "Vendas de diversos produtos",
     description:
       "Explore nossa ampla gama de produtos cuidadosamente selecionados para atender às suas necessidades. De eletrônicos a produtos domésticos, oferecemos qualidade e variedade para garantir sua satisfação em cada compra. ",
+  },
+  {
+    icon: "🌐",
+    service: "Criação de sites e Manutenção",
+    description:
+    "Transforme sua presença online com nossos serviços de criação e manutenção de sites. Desenvolvemos sites personalizados que não só atendem às suas necessidades específicas, mas também são otimizados para desempenho e segurança. Desde o design até a implementação e manutenção contínua, garantimos que seu site esteja sempre atualizado e funcionando perfeitamente.",
   },
 ];
 
@@ -41,7 +47,7 @@ export default function Servicos() {
         equipe experiente, garantimos inovação confiável que excede
         expectativas, concretizando suas metas.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-5">
         {Data.map((item, index) => {
           return (
             <div

@@ -81,7 +81,7 @@ export const Header = () => {
         href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`}
         className="destaque"
       >
-        Entre em contatodd
+        Entre em contato
       </a>
 
       <button

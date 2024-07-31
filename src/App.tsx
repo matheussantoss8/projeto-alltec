@@ -41,9 +41,8 @@ function App() {
         {/*         <hr className=" animate-pulse" />
         <Clientes></Clientes> */}
         {/*       <Galeria /> */}
-        <hr className="mb-20 animate-pulse" />
 
-        <Parceiros />
+        {/* <Parceiros /> */}
         <hr className="mb-20 animate-pulse" />
       </main>
       <ButtonUp />
